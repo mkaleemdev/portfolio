@@ -1,0 +1,161 @@
+@media screen and (max-width:576px) {
+    section {
+        margin-bottom: 50px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile-hader {
+        display: block;
+    }
+
+    .hero-sec {
+        padding: 50px 0;
+        background-image: none;
+    }
+
+    .prof-name {
+        margin: 0 2rem;
+    }
+
+    .logo-name h4 {
+        font-size: 1rem;
+    }
+
+    .follow-me {
+        display: none;
+    }
+
+    .work-period {
+        display: none;
+    }
+
+    .work-line::before {
+        left: 5%;
+    }
+
+
+
+    .social-connet li {
+        width: 100%;
+    }
+
+    .social-connet {
+        margin-bottom: 50px;
+        padding-top: 1rem;
+    }
+
+    .contact-form {
+        padding-top: 1rem;
+    }
+    .comp-text{
+        padding: 1.5rem 1rem;
+    }
+
+    .comp-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .comp-logo img {
+        margin: 0 10px 0 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .comp-text h5 {
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comp-text h6 {
+        padding: 2px;
+    }
+
+    .comp-text h6 span:nth-child(1) {
+        padding: 10px 0 0 0;
+    }
+
+    .comp-text p {
+        font-weight: 300;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .comp-text h5 a {
+        font-size: 18px;
+    }
+
+    .comp-text h5 span {
+        font-size: 12px;
+    }
+
+    .company-card::after {
+        left: -5%;
+    }
+    
+    .about-card-row{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .menu li a {
+        font-size: 0.7rem;
+    }
+
+    .logo-name h4 {
+        font-size: 1rem;
+    }
+
+    .btn-cv a {
+        border: 2px solid var(--primary);
+        padding: 2px 6px;
+    }
+
+    .hero-sec {
+        padding: 50px 0;
+        background-size: cover;
+    }
+
+    .follow-me {
+        position: fixed;
+        top: 10%;
+        left: 95%;
+        animation: follow 4s linear infinite;
+    }
+
+    .work-period h5 span {
+        font-size: 12px;
+    }
+
+    .work-line::before {
+        left: 0%;
+    }
+
+    .company-card::after {
+        left: -3%;
+    }
+
+    .company-card::before {
+        top: 24%;
+        left: -11.6%;
+        height: 25px;
+        width: 25px;
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+
+
+    .company-card {
+        margin-top: 4rem;
+    }
+
+    .social-connet li {
+        width: 100%;
+    }
+}
