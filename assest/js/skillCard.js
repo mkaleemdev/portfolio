@@ -26,7 +26,7 @@ const skillCard = [
     text: "Node.JS",
   },
   {
-    img: "assest/image/mongodb.png",
+    img: "assest/image/MongoDB.png",
     text: "MongoDB",
   },
   {
@@ -38,7 +38,7 @@ const skillCard = [
     text: "Redux",
   },
   {
-    img: "assest/image/jQuery.png",
+    img: "assest/image/jquery.png",
     text: "jQuery",
   },
   {
