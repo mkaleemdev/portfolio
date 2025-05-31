@@ -1,4 +1,8 @@
 @media screen and (max-width:576px) {
+    * {
+        font-size: 12px;
+    }
+
     section {
         margin-bottom: 50px;
     }
@@ -11,9 +15,30 @@
         display: block;
     }
 
+    .heading-text h4 span {
+        font-size: 14px;
+    }
+
     .hero-sec {
-        padding: 50px 0;
+        padding: 20px 0;
         background-image: none;
+    }
+
+    .prof-name h2 {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .prof-name h3 {
+        font-size: 30px;
+    }
+
+    .prof-name h4 span {
+        font-size: 18px;
+    }
+
+    .prof-name p {
+        font-size: 13px;
     }
 
     .prof-name {
@@ -36,7 +61,12 @@
         left: 5%;
     }
 
-
+    .skill-card img {
+        padding: 10px;
+    }
+    .skill-card h5{
+        padding-bottom: 10px;
+    }
 
     .social-connet li {
         width: 100%;
@@ -50,7 +80,8 @@
     .contact-form {
         padding-top: 1rem;
     }
-    .comp-text{
+
+    .comp-text {
         padding: 1.5rem 1rem;
     }
 
@@ -96,9 +127,27 @@
     .company-card::after {
         left: -5%;
     }
-    
-    .about-card-row{
+
+    .about-card-row {
         padding: 0.5rem;
+    }
+
+    .click-top a i {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .click-top a {
+        bottom: 8%;
+        right: 23%;
+    }
+
+    .prof-name p {
+        font-size: 12px;
+    }
+
+    .skill-card h5 {
+        font-size: 12px;
     }
 }
 
