@@ -60,6 +60,9 @@
     .work-line::before {
         left: 5%;
     }
+    .skill-card{
+        box-shadow: rgb(255 255 255 / 28%) 3px 4px 4px 1px;
+    }
 
     .skill-card img {
         padding: 10px;

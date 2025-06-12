@@ -69,7 +69,7 @@ const skillCard = [
 
 skillCard.map((item, index) => {
   skillCard_row.innerHTML += `
-             <div class="col-xl-2 col-md-3 col-6">
+             <div class="col-xl-2 col-md-3 col-3">
                    <div class="skill-card"  data-aos="zoom-in" data-aos-delay="500">
                        <img src="${item.img}" alt="" />
                        <h5>${item.text}</h5>
