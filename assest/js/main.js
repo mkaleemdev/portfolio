@@ -1,12 +1,35 @@
-// ==== follow me %%%%
+// ============= header ==========
+let header = document.querySelector("header");
 
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
+window.addEventListener("scroll", function () {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-  if (scroll >= 300) {
-    $(".follow-me").addClass("darkHeader");
+  if (scrollTop > 300) {
+    header.classList.add("show");
   } else {
-    $(".follow-me").removeClass("darkHeader");
+    header.classList.remove("show");
+  }
+
+});
+
+
+// ========== custom cursor ===========
+const cursor = document.querySelector(".custom-cursor");
+
+window.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+// ==== follow me %%%%
+const follow_me = document.querySelector(".follow-me");
+window.addEventListener("scroll", function () {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > 100) {
+    follow_me.classList.add("darkHeader");
+  } else {
+    follow_me.classList.remove("darkHeader");
   }
 });
 
