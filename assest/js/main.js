@@ -130,7 +130,7 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-// &&&&&&&&&&&&&&&&
+// &&&&&&&&&&&&&&&& tsparticles ==========
 tsParticles.load("tsparticles", {
   particles: {
     number: {
@@ -154,4 +154,43 @@ tsParticles.load("tsparticles", {
       width: 1,
     },
   },
+});
+
+// ============ counters =============
+const counters = document.querySelectorAll('.count');
+
+const formatNumber = (num) => {
+  return num.toLocaleString();
+};
+
+const animateCounter = (el) => {
+  const target = +el.getAttribute('data-target');
+  let count = 0;
+  const step = target / 120;
+
+  const update = () => {
+    if (count < target) {
+      count += step;
+      el.innerText = formatNumber(Math.ceil(count)) + "+";
+      requestAnimationFrame(update);
+    } else {
+      el.innerText = formatNumber(target) + "+";
+      el.classList.add("animate");
+    }
+  };
+
+  update();
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 1 });
+
+counters.forEach(counter => {
+  observer.observe(counter);
 });
