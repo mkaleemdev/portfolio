@@ -560,6 +560,7 @@ header.show {
     padding: 3rem;
 }
 
+
 .about-content ul {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -886,22 +887,33 @@ header.show {
 #counters {
     display: flex;
     justify-content: space-around;
+        position: relative;
 }
 
 .counter-box {
-    margin: 20px;
+    padding: 40px;
     text-align: center;
-    /* display: flex; */
+    background-color: #1d2a57;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;
 }
-.counter-box-icon{
+
+.counter-box p {
+    color: #fff;
+}
+
+.counter-box-icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.counter-box-icon i{
+
+.counter-box-icon i {
     font-size: 1.5rem;
     color: #fff;
 }
+
 .count {
     font-size: 2.5rem;
     font-weight: bold;

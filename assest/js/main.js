@@ -158,12 +158,14 @@ tsParticles.load("tsparticles", {
 
 // ============ counters =============
 const counters = document.querySelectorAll('.count');
+const clientSatis = document.querySelector('#clientSatis')
 
 const formatNumber = (num) => {
   return num.toLocaleString();
 };
 
 const animateCounter = (el) => {
+  
   const target = +el.getAttribute('data-target');
   let count = 0;
   const step = target / 120;
@@ -175,6 +177,7 @@ const animateCounter = (el) => {
       requestAnimationFrame(update);
     } else {
       el.innerText = formatNumber(target) + "+";
+      clientSatis.innerText = formatNumber(target) + "%";      
       el.classList.add("animate");
     }
   };
