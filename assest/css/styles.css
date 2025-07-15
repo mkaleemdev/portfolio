@@ -887,7 +887,7 @@ header.show {
 #counters {
     display: flex;
     justify-content: space-around;
-        position: relative;
+    position: relative;
 }
 
 .counter-box {
