@@ -133,8 +133,8 @@
 
     .comp-text p {
         font-weight: 300;
-        padding-top: 10px;
-        font-size: 14px;
+        padding-top: 5px;
+        font-size: 13px;
     }
 
     .comp-text h5 a {
@@ -147,6 +147,12 @@
 
     .company-card::after {
         left: -5%;
+    }
+    .company-card{
+        height: 530px;
+    }
+    .card-end{
+        top: 25px;
     }
 
     .about-card-row {

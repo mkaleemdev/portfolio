@@ -574,12 +574,21 @@ header.show {
     padding-right: 15px;
 }
 
+.about-content p {
+    text-align: justify;
+}
+
 .about-img img {
     border-radius: 10px;
 }
 
 
 /* ============== skill =============  */
+
+.skillCard-div{
+    position: sticky;
+    top: 100px;
+}
 .skill-card {
     background-color: #1d2a57;
     border-radius: 10px;
@@ -663,6 +672,13 @@ header.show {
     }
 }
 
+.work-line .card-end:nth-child(2) {
+    transform: rotate(1deg);
+}
+
+.work-line .card-end:nth-child(3) {
+    transform: rotate(-1deg);
+}
 
 .work-period h5 span {
     color: #959595;
@@ -672,6 +688,8 @@ header.show {
 .card-end {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 100px;
 }
 
 .company-card {
@@ -679,8 +697,9 @@ header.show {
     padding: 3px;
     border-radius: 10px;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2rem;
     width: 90%;
+    height: 350px;
 }
 
 .company-card::before {
@@ -694,6 +713,7 @@ header.show {
     content: "";
     border-radius: 12px;
 }
+
 
 .company-cardRight {
     box-shadow: rgb(255 255 255 / 28%) 6px 6px 10px;

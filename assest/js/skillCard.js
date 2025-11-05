@@ -30,6 +30,10 @@ const skillCard = [
     text: "MongoDB",
   },
   {
+    img: "assest/image/mysql.png",
+    text: "MySQL",
+  },
+  {
     img: "assest/image/Express.png",
     text: "Express.JS",
   },
@@ -54,6 +58,10 @@ const skillCard = [
     text: "Wordpress",
   },
   {
+    img: "assest/image/shopify.png",
+    text: "Shopify",
+  },
+  {
     img: "assest/image/figma.png",
     text: "Figma",
   },
@@ -69,8 +77,8 @@ const skillCard = [
 
 skillCard.map((item, index) => {
   skillCard_row.innerHTML += `
-             <div class="col-xl-2 col-md-3 col-3">
-                   <div class="skill-card"  data-aos="zoom-in" data-aos-delay="500">
+             <div class="col-xl-2 skillCard-div col-md-3 col-3">
+                   <div class="skill-card"  data-aos="zoom-in" data-aos-delay="100">
                        <img src="${item.img}" alt="" />
                        <h5>${item.text}</h5>
                  </div>
