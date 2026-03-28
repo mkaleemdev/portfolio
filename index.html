@@ -3,25 +3,59 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="icon" href="assest/image/k icon.jpg" />
 
-  <!-- bootsrap cdn link -->
+  <!-- Mobile Friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Title -->
+  <title>Portfolio | MERN Stack Developer | Web Developer Portfolio</title>
+
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Mohammad Kaleem is a professional Full Stack Developer with 3+ years experience in HTML, CSS, JavaScript, React, Next.js, WordPress and Shopify. View my portfolio and projects." />
+
+  <!-- Keywords -->
+  <meta name="keywords"
+    content="Full Stack Developer, MERN Stack Developer, Web Developer, JavaScript Developer, React Developer, WordPress Developer, Shopify Developer, Portfolio, Noida Top Developer, Top E-commerce Website Developer in Noida, Top Shopify Developer in Noida, Best Full Stack Developer in Noida, MERN Stack Developer in Noida, Full Stack Developer Portfolio" />
+
+  <!-- Author -->
+  <meta name="author" content="Mohammad Kaleem" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://mkaleemdev.github.io/portfolio/" />
+
+  <!-- Open Graph (Social Media) -->
+  <meta property="og:title" content="Mohammad Kaleem - Full Stack Developer" />
+  <meta property="og:description"
+    content="Professional Full Stack Developer Portfolio | HTML, CSS, JavaScript, React, WordPress" />
+  <meta property="og:url" content="https://mkaleemdev.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mkaleemdev.github.io/portfolio/assest/image/my-pic.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assest/image/k-icon.jpg" />
+
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assest/css/styles.css" />
   <link rel="stylesheet" href="assest/css/responsive.css" />
 </head>
+
 
 <body>
   <div class="custom-cursor">
@@ -45,7 +79,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#service">Services</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="">Project</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -139,7 +173,7 @@
                 <span>Developer</span>
               </h4>
               <p>
-                I am a Software Engineer with over 2+ years of experience specializing in HTML, CSS, JavaScript,
+                I am a Software Engineer with over 3+ years of experience specializing in HTML, CSS, JavaScript,
                 WordPress, Shopify,
                 React.js, and Next.js. Skilled in creating responsive, user-friendly web applications,
               </p>
@@ -173,7 +207,7 @@
         </div>
         <div class="col-md-5">
           <div class="my-pic text-center" data-aos="fade-up">
-            <img src="assest/image/my pic.jpg" alt="" />
+            <img src="assest/image/my pic.jpg" alt="Full Stack Developer Profile Photo" />
           </div>
         </div>
       </div>
@@ -198,9 +232,9 @@
           <div class="col-lg-8">
             <div class="about-content">
               <h3 class="mb-3">About Me</h3>
-              <p>I am a Web Developer with 2 years + of professional experience in designing and
+              <p>I am a Web & Software Developer with 3 years + of professional experience in designing and
                 developing responsive
-                websites, landing pages, and web application dashboards. Proficient in HTML5, CSS3, and JavaScript and
+                websites, landing pages, e-Commerse Website and web application dashboards. Proficient in HTML5, CSS3, and JavaScript and
                 WordPress to
                 create visually appealing and user-friendly interfaces. Skilled in converting design concepts into fully
                 functional websites
@@ -398,6 +432,24 @@
     </div>
   </section>
 
+  <!-- ===== Services Section Start ===== -->
+  <section id="services" class="services-section py-5">
+    <div class="container">
+
+      <!-- Section Title -->
+      <div class="heading-text text-center mb-5" data-aos="zoom-in-down">
+        <h4>
+          <span><i class="bi bi-briefcase-fill"></i> My Services</span>
+        </h4>
+      </div>
+
+      <div class="row g-4" id="servicesRow"></div>
+
+    </div>
+  </section>
+  <!-- ===== Services Section End ===== -->
+
+
   <section id="contact">
     <div class="heading-text text-center mb-5" data-aos="zoom-in-down">
       <h4>
@@ -430,10 +482,10 @@
           <div>
             <h5 class="text-warning">Contact me</h5>
             <div class="contact-form">
-              <input type="text" placeholder="Enter Your Name" required />
-              <input type="tel" placeholder="Enter Your Mobile Number" required />
-              <input type="email" placeholder="Enter Your Email" required />
-              <textarea name="" placeholder="Enter Your Message" required></textarea>
+              <input type="text" name="name" placeholder="Enter Your Name" required />
+              <input type="tel" name="phone" placeholder="Enter Your Mobile Number" required />
+              <input type="email" name="email" placeholder="Enter Your Email" required />
+              <textarea name="message" placeholder="Enter Your Message" required></textarea>
               <input type="submit" id="btn-submit" />
             </div>
           </div>
@@ -457,8 +509,61 @@
 
   <script src="assest/js/main.js"></script>
   <script src="assest/js/skillCard.js"></script>
+  <script src="assest/js/serviceCard.js"></script>
 
   <script>
-    AOS.init(2000);
+    AOS.init(1000);
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammad Kaleem",
+  "url": "https://mkaleemdev.github.io/portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/mkaleem56/",
+    "https://github.com/mkaleemdev"
+  ],
+
+  "jobTitle": "Full Stack Developer, MERN Stack Developer, Web Developer, E-commerce Website Developer",
+
+  "knowsAbout": [
+    "Noida Top Developer",
+    "Top E-commerce Website Developer in Noida",
+    "Top Shopify Developer in Noida",
+    "Best Full Stack Developer in Noida",
+    "MERN Stack Developer in Noida",
+    "JavaScript Development",
+    "React Development",
+    "WordPress Development"
+  ],
+
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Detailing Devils"
+  },
+
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "Detailing Devils"
+    },
+    {
+      "@type": "Organization",
+      "name": "Kiswasoft Technologies"
+    }
+  ],
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "India",
+    "addressLocality": "Noida"
+  }
+}
+</script>
+
+
+
+
 </body>
