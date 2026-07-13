@@ -26,6 +26,10 @@ const skillCard = [
     text: "Node.JS",
   },
   {
+    img: "assest/image/php-logo.png",
+    text: "php",
+  },
+  {
     img: "assest/image/MongoDB.png",
     text: "MongoDB",
   },
