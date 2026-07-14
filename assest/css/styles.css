@@ -1059,6 +1059,8 @@ header.show {
 .project-card-img {
     height: 450px;
     overflow: hidden;
+    position: relative;
+    z-index: 9999;
 }
 
 .project-card-img img {
