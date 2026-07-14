@@ -585,10 +585,11 @@ header.show {
 
 /* ============== skill =============  */
 
-.skillCard-div{
+.skillCard-div {
     position: sticky;
     top: 100px;
 }
+
 .skill-card {
     background-color: #1d2a57;
     border-radius: 10px;
@@ -626,6 +627,12 @@ header.show {
 
 .heading-text h4 span i {
     color: var(--primary);
+}
+
+.heading-text h4 span svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary)
 }
 
 .heading-text h4 span::before {
@@ -962,41 +969,41 @@ header.show {
 /* ===== Services Section ===== */
 
 .services-section {
-  color: #fff;
+    color: #fff;
 }
 
 /* Section Heading */
 
 .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #38bdf8;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38bdf8;
 }
 
 .section-subtitle {
-  color: #94a3b8;
-  margin-top: 10px;
+    color: #94a3b8;
+    margin-top: 10px;
 }
 
 /* Service Card */
 
 .service-card {
     background: rgb(29 42 87 / 80%);
-    backdrop-filter: blur(10px);    
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 35px 25px;
-  text-align: center;
-  height: 100%;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Hover Effect */
 
 .service-card:hover {
- transform: translateY(-15px) scale(1.02);
+    transform: translateY(-15px) scale(1.02);
     box-shadow: 6px 6px 7px 1px rgb(1 210 147 / 30%);
     border-color: #01d293;
 }
@@ -1015,33 +1022,51 @@ header.show {
 } */
 
 .service-card:hover::before {
-  left: 0;
+    left: 0;
 }
 
 /* Icon */
 
 .service-card .icon {
-  font-size: 45px;
-  margin-bottom: 15px;
-  color: #38bdf8;
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #38bdf8;
 }
-.service-card .icon img{
+
+.service-card .icon img {
     width: 50px;
 }
 
 /* Title */
 
 .service-card h4 {
-  font-weight: 600;
-  margin-bottom: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 /* Text */
 
 .service-card p {
-  color: #cbd5f5;
-  font-size: 15px;
-  line-height: 1.7;
+    color: #cbd5f5;
+    font-size: 15px;
+    line-height: 1.7;
 }
-/* WordPress Icon */
 
+.project-card a {
+    color: #fff;
+}
+
+.project-card-img {
+    height: 450px;
+    overflow: hidden;
+}
+
+.project-card-img img {
+    width: 100%;
+    display: block;
+    transition: transform 3s linear;
+}
+
+.project-card-img:hover img {
+    transform: translateY(calc(-100% + 450px));
+}
