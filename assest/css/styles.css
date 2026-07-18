@@ -1060,7 +1060,7 @@ header.show {
     height: 450px;
     overflow: hidden;
     position: relative;
-    z-index: 9999;
+    z-index: 9;
 }
 
 .project-card-img img {

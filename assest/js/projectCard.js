@@ -24,20 +24,40 @@ const projects = [
     title: "",
     link: "https://www.devilscustoms.com/",
   },
-   {
+  {
     image: "assest/image/project/araba-cookis.webp",
     title: "",
-    link: "https://www.arabacoffee.com/araba-cookie",
+    link: "",
   },
-   {
+  {
     image: "assest/image/project/araba-coffe.webp",
     title: "",
     link: "https://www.arabacoffee.com/",
   },
-   {
+  {
     image: "assest/image/project/dd-site.webp",
     title: "",
-    link: "https://www.webnew.detailingdevils.com/",
+    link: "",
+  },
+  {
+    image: "assest/image/project/mscreationonline.webp",
+    title: "",
+    link: "https://www.mscreationonline.com/",
+  },
+  {
+    image: "assest/image/project/datagami.webp",
+    title: "",
+    link: "https://www.datagami.in/",
+  },
+  {
+    image: "assest/image/project/sparklineworkforce.webp",
+    title: "",
+    link: "https://www.sparklineworkforce.in/",
+  },
+  {
+    image: "assest/image/project/investo-advice.webp",
+    title: "",
+    link: "https://investoadvice.com/",
   },
 ];
 
